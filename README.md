@@ -196,49 +196,6 @@ If the `mail.sync_on` variable is set to anything other than `trusted` or
 `all`, the timer will never be activated.
 
 
-## Tarsnap
-
-[Tarsnap][19] is installed with its default configuration file. However,
-setting up Tarsnap is left as an exercise for the user. New Tarsnap users
-should [register their machine and generate a key][20]. Existing users should
-recover their key(s) and cache directory from their backups (or, alternatively,
-recover their key(s) and rebuild the cache directory with `tarsnap --fsck`).
-
-[Tarsnapper][21] is installed to manage backups. A basic configuration file to
-backup `/etc` is included. Tarsnapper is configured to look in
-`/usr/local/etc/tarsnapper.d` for additional jobs. As with with the Tarsnap key
-and cache directory, users should recover their jobs files from backups after
-the Tarsnapper install is complete. See the Tarsnapper documentation for more
-details.
-
-### Running Tarsnap
-
-A systemd unit file and timer are included for Tarsnapper. Rather than calling
-it directly, the systemd unit wraps Tarsnapper with [backitup][22].
-
-The timer is set to execute the unit hourly, but backitup will only call
-Tarsnapper once within the period defined in the `tarsnapper.period` variable.
-This defaults to `DAILY`. This increases the likelyhood of completing daily
-backups by checking each hour if the unit has run succesfully on the current
-calendar day.
-
-In addition to the period limitation, backitup defaults to only calling
-Tarsnapper when it detects the machine ison AC power. To allow Tarsnapper to
-run when on battery, set the `tarsnapper.ac_only` variable to `False`.
-
-As with `mailsync`, the timer is not started or enabled by default. Instead,
-the timer is added to `/etc/nmtrust/trusted_units`, causing the NetworkManager
-trusted unit dispatcher to activate the timer whenever a connection is
-established to a trusted network. The timer is stopped whenever the network
-goes down or a connection is established to an untrusted network.
-
-To have the timer activated at boot, change the `tarsnapper.run_on` variable
-from `trusted` to `all`.
-
-If the `tarsnapper.run_on` variable is set to anything other than `trusted` or
-`all`, the timer will never be activated.
-
-
 ## Tor
 
 [Tor][23] is installed by default. A systemd service unit for Tor is installed,
@@ -360,7 +317,6 @@ By completely removing the `himawaripy` variable, no related tasks will be run.
 [19]: https://www.tarsnap.com/
 [20]: https://www.tarsnap.com/gettingstarted.html
 [21]: https://github.com/miracle2k/tarsnapper
-[22]: https://github.com/pigmonkey/backitup
 [23]: https://www.torproject.org/
 [24]: https://github.com/EtiennePerot/parcimonie.sh
 [25]: https://www.bitlbee.org/main.php/news.r.html
