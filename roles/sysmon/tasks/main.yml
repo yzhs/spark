@@ -1,17 +1,7 @@
 ---
-- name: Install sysstat
-  pacman:
-    name: sysstat
-    state: present
-
 - name: Install glances
   pacman:
     name: glances
-    state: present
-
-- name: Install btop
-  pacman:
-    name: btop
     state: present
 
 - name: Install htop
@@ -32,9 +22,4 @@
 - name: Install smartmontools
   pacman:
     name: smartmontools
-    state: present
-
-- name: Install progress
-  pacman:
-    name: progress
     state: present
