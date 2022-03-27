@@ -45,7 +45,6 @@
     - { role: visidata, tags: ['visidata'] }
     - { role: pdf, tags: ['pdf'] }
     - { role: dictd, tags: ['dictd'] }
-    - { role: redshift, tags: ['redshift'] }
     - { role: transmission, tags: ['transmission'] }
     - { role: virtualbox, tags: ['virtualbox'] }
     - { role: hashicorp, tags: ['hashicorp'] }
