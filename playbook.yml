@@ -15,7 +15,6 @@
     - { role: x, tags: ['x'] }
     - { role: alacritty, tags: ['alacritty'] }
     - { role: lightdm, tags: ['lightdm'], when: "display_manager == 'lightdm'" }
-    - { role: i3, tags: ['i3'], when: "desktop_environment == 'i3'" }
     - { role: pass, tags: ['pass'] }
 #    - { role: iptables, tags: ['iptables'] }
     - { role: nettools, tags: ['nettools'] }
