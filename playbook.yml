@@ -56,7 +56,7 @@
     - { role: radio, tags: ['radio'] }
     - { role: postgresql, tags: ['postgresql'] }
     - { role: calibre, tags: ['calibre'] }
-    - { role: parcimonie, tags: ['parcimonie'], when: "tor is defined" }
+#    - { role: parcimonie, tags: ['parcimonie'], when: "tor is defined" }
     - { role: wormhole, tags: ['wormhole'] }
 #    - { role: bluetooth, tags: ['bluetooth'], when: "bluetooth is defined" }
     - { role: wttr, tags: ['wttr'] }
