@@ -84,7 +84,6 @@
     - { role: units, tags: ['units'], when: "units is defined" }
     - { role: logitech, tags: ['logitech'] }
     - { role: pydev, tags: ['pydev'] }
-    - { role: aria2, tags: ['aria2'] }
     - { role: signal, tags: ['signal'] }
     - { role: ripgrep, tags: ['ripgrep'] }
     - { role: zeal, tags: ['zeal'] }
