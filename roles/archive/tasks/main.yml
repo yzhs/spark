@@ -16,60 +16,9 @@
   tags:
     - unrar
 
-- name: Install atool
-  pacman:
-    name: atool
-    state: present
-  tags:
-    - atool
-
-- name: Install hashdeep
-  pacman:
-    name: hashdeep
-    state: present
-  tags:
-    - hashdeep
-
 - name: Install par2cmdline
   pacman:
     name: par2cmdline
     state: present
   tags:
     - par2
-
-- name: Install ddrescue
-  pacman:
-    name: ddrescue
-    state: present
-  tags:
-    - ddrescue
-
-- name: Install lesspipe
-  pacman:
-    name: lesspipe
-    state: present
-  tags:
-    - lesspipe
-
-- name: Install geteltorito
-  aur:
-    name: geteltorito
-    user: "{{ user.name }}"
-  tags:
-    - aur
-    - geteltorito
-
-- name: Install pigz
-  pacman:
-    name: pigz
-    state: present
-  tags:
-    - pigz
-
-- name: Install ventoy
-  aur:
-    name: ventoy-bin
-    user: "{{ user.name }}"
-  tags:
-    - aur
-    - ventoy
