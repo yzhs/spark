@@ -1,5 +1,7 @@
 ---
 - name: Install editors
   pacman:
-    name: "{{ editors }}"
+    name:
+      - neovim
+      - neovim-qt
     state: present

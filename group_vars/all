@@ -59,9 +59,6 @@ network:
         - b21284e6-01af-492f-8bea-45a69ef22a23
         - f74f2bd5-8748-4e1e-98f9-dae2dd44b916
 
-editors:
-    - gvim
-
 video_drivers:
     - libva-intel-driver
 
