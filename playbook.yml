@@ -45,7 +45,6 @@
     - { role: screensaver, tags: ['screensaver'] }
     - { role: weechat, tags: ['weechat'] }
     - { role: taskwarrior, tags: ['taskwarrior'] }
-    - { role: ledger, tags: ['ledger'] }
     - { role: mail, tags: ['mail'] }
     - { role: cups, tags: ['cups'] }
     - { role: office, tags: ['office'] }
