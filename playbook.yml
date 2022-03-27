@@ -33,7 +33,7 @@
     - { role: mpv, tags: ['mpv'] }
 #    - { role: laptop, tags: ['laptop'] }
 #    - { role: thinkpad, tags: ['thinkpad'], when: "'ThinkPad' in ansible_product_version" }
-    - { role: screensaver, tags: ['screensaver'] }
+#    - { role: screensaver, tags: ['screensaver'] }
     - { role: taskwarrior, tags: ['taskwarrior'] }
     - { role: mail, tags: ['mail'] }
     - { role: cups, tags: ['cups'] }
