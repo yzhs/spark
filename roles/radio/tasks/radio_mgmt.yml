@@ -1,9 +1,0 @@
----
-- name: Install CHIRP
-  aur:
-    name:
-      - hamradio-menus
-      - chirp-daily
-    user: "{{ user.name }}"
-  tags:
-    - aur
