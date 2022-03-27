@@ -34,7 +34,6 @@
     - { role: media, tags: ['media'] }
     - { role: mpd, tags: ['mpd'] }
     - { role: mpv, tags: ['mpv'] }
-    - { role: pianobar, tags: ['pianobar'] }
     - { role: laptop, tags: ['laptop'] }
     - { role: thinkpad, tags: ['thinkpad'], when: "'ThinkPad' in ansible_product_version" }
     - { role: screensaver, tags: ['screensaver'] }
