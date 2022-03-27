@@ -61,20 +61,10 @@ base_packages:
     - moreutils
     - dateutils
     - bc
-    - ranger
-    - arch-wiki-lite
-    - arch-wiki-docs
-    - python-keyring
-    - python-secretstorage
     - tig
-    - ruby
     - pv
-    - minicom
     - jq
-    - screen
-    - termdown
     - fzf
-    - cpulimit
 
 filesystem_packages:
     - dosfstools
