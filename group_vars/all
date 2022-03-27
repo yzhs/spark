@@ -18,6 +18,7 @@ aur:
     dir: aur
     packages:
         - yay
+        - pikaur
         - downgrade
         - myrepos
 
