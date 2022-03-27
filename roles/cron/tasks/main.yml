@@ -1,6 +1,6 @@
 ---
-- name: Install cronie
-  pacman: name=cronie state=present
+- name: Install fcron
+  pacman: name=fcron state=present
 
-- name: Enable cronie
-  service: name=cronie.service enabled=yes state=started
+- name: Enable fcron
+  service: name=fcron.service enabled=yes state=started
