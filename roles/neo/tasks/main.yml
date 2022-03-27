@@ -1,0 +1,9 @@
+---
+- name: Enable neo for XOrg libinput
+  copy: src=40-libinput-neo.conf dest=/etc/X11/xorg.conf.d/40-libinput-neo.conf
+
+- name: Enable neo for vconsole
+  lineinfile: "dest=/etc/vconsole.conf
+              regexp=^KEYMAP=
+              state=present
+              line='KEYMAP=neo'"
