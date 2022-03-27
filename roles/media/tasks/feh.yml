@@ -4,14 +4,6 @@
   tags:
     - feh
 
-- name: Jail feh
-  file: src=/usr/bin/firejail
-        dest=/usr/local/bin/feh
-        state=link
-  tags:
-    - feh
-    - firejail
-
 - name: Install imlib2-heic
   aur:
     name: imlib2-heic
