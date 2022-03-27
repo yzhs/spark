@@ -41,7 +41,6 @@
     - { role: pianobar, tags: ['pianobar'] }
     - { role: laptop, tags: ['laptop'] }
     - { role: thinkpad, tags: ['thinkpad'], when: "'ThinkPad' in ansible_product_version" }
-    - { role: macbook, tags: ['macbook'], when: "'MacBook' in ansible_product_name" }
     - { role: screensaver, tags: ['screensaver'] }
     - { role: weechat, tags: ['weechat'] }
     - { role: taskwarrior, tags: ['taskwarrior'] }
