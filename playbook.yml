@@ -54,7 +54,6 @@
     - { role: virtualbox, tags: ['virtualbox'] }
     - { role: hashicorp, tags: ['hashicorp'] }
     - { role: virtualenv, tags: ['virtualenv'] }
-    - { role: mapping, tags: ['mapping'] }
     - { role: sound, tags: ['sound'] }
     - { role: pim, tags: ['pim'] }
     - { role: radio, tags: ['radio'] }
