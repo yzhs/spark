@@ -139,71 +139,6 @@ from `trusted` to `all`.
 If you do not wish to use Tor, simply remove the `tor` variable from the
 configuration.
 
-### parcimonie.sh
-
-[parcimonie.sh][24] is provided to periodically refresh entries in the user's
-GnuPG keyring over the Tor network. The service is added to
-`/etc/nmtrust/trusted_units` and respects the `tor.run_on` variable.
-
-
-## BitlBee
-
-[BitlBee][25] and [WeeChat][26] are used to provide chat services. A systemd
-service unit for BitlBee is installed, but not enabled or started by default.
-Instead, the service is added to `/etc/nmtrust/trusted_units`, causing the
-NetworkManager trusted unit dispatcher to activate the service whenever a
-connection is established to a trusted network. The service is stopped whenever
-the network goes down or a connection is established to an untrusted network.
-
-To have the service activated at boot, change the `bitlbee.run_on` variable
-from `trusted` to `all`.
-
-If the `bitlbee.run_on` variable is set to anything other than `trusted` or
-`all`, the service will never be activated.
-
-By default BitlBee will be configured to proxy through Tor. To disable this,
-remove the `bitlebee.torify` variable or disable Tor entirely by removing the
-`tor` variable.
-
-## PostgreSQL
-
-[PostgreSQL][28] is installed and enabled by default. If the
-`postgresql.enable` variable is set to anything other than `True` or is not
-defined, the service will not be started or enabled.
-
-This is intended for local development. PostgreSQL is configured to only listen
-on localhost and no additional ports are opened in the default firewall. This
-configuration means that PostgreSQL is not a network service. As such, the
-PostgreSQL service is not added to `/etc/nmtrust/trusted_units`.
-
-Additional configuration options are set which improve performance but make the
-database service inappropriate for production use.
-
-## Himawaripy
-
-[Himawaripy][29] is provided to fetch near-realtime photos of Earth from the
-Japanese [Himawari 8][30] weather satellite and set them as the user's desktop
-background via feh. This should provide early warning of the presence of any
-Vogon constructor fleets appearing over the Eastern Hemisphere.
-
-A systemd service unit and timer is installed, but not enabled or started by
-default. Instead, the service is added to `/etc/nmtrust/trusted_units`, causing
-the NetworkManager trusted unit dispatcher to activate the service whenever a
-connection is established to a trusted network. The service is stopped whenever
-the network goes down or a connection is established to an untrusted network.
-
-To have the service activated at boot, change the `himawaripy.run_on` variable
-from `trusted` to `all`.
-
-If the `himawaripy.run_on` variable is set to anything other than `trusted` or
-`all`, the service will never be activated.
-
-By default the timer is scheduled to fetch a new image at 15 minute intervals.
-This can be changed by modifying the `himawaripy.run_time` variable.
-
-By completely removing the `himawaripy` variable, no related tasks will be run.
-
-
 [1]: http://www.ansible.com
 [2]: https://www.archlinux.org
 [3]: https://wiki.archlinux.org/index.php/Installation_guide#Post-installation
@@ -213,8 +148,6 @@ By completely removing the `himawaripy` variable, no related tasks will be run.
 [7]: https://github.com/pigmonkey/ansible-aur
 [8]: https://github.com/Jguer/yay
 [9]: https://wiki.archlinux.org/index.php/AUR_helpers
-[10]: https://firejail.wordpress.com/
-[11]: https://github.com/EtiennePerot/macchiato
 [12]: https://github.com/pigmonkey/nmtrust
 [13]: http://isync.sourceforge.net/
 [14]: http://offlineimap.org/
@@ -222,14 +155,4 @@ By completely removing the `himawaripy` variable, no related tasks will be run.
 [16]: http://sourceforge.net/p/msmtp/code/ci/master/tree/scripts/msmtpq/README.msmtpq
 [17]: https://github.com/pimutils/vdirsyncer
 [18]: https://wiki.archlinux.org/index.php/Systemd/Timers
-[19]: https://www.tarsnap.com/
-[20]: https://www.tarsnap.com/gettingstarted.html
-[21]: https://github.com/miracle2k/tarsnapper
 [23]: https://www.torproject.org/
-[24]: https://github.com/EtiennePerot/parcimonie.sh
-[25]: https://www.bitlbee.org/main.php/news.r.html
-[26]: https://weechat.org/
-[27]: https://git-annex.branchable.com/
-[28]: http://www.postgresql.org/
-[29]: https://github.com/boramalper/himawaripy
-[30]: https://en.wikipedia.org/wiki/Himawari_8
