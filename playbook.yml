@@ -18,7 +18,7 @@
     - { role: pass, tags: ['pass'] }
 #    - { role: iptables, tags: ['iptables'] }
     - { role: nettools, tags: ['nettools'] }
-    - { role: networkmanager, tags: ['networkmanager'] }
+#    - { role: networkmanager, tags: ['networkmanager'] }
     - { role: ntp, tags: ['ntp'] }
     - { role: tor, tags: ['tor'], when: "tor is defined" }
     - { role: editors, tags: ['editors'] }
