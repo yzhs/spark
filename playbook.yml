@@ -69,7 +69,6 @@
     - { role: wormhole, tags: ['wormhole'] }
 #    - { role: bluetooth, tags: ['bluetooth'], when: "bluetooth is defined" }
     - { role: wttr, tags: ['wttr'] }
-    - { role: hostsctl, tags: ['hostsctl'], when: "hostsctl is defined" }
     - { role: syncthing, tags: ['syncthing'], when: "syncthing is defined" }
     - { role: mirrorlist, tags: ['mirrorlist'], when: "mirrorlist is defined" }
     - { role: pkgfile, tags: ['pkgfile'], when: "pkgfile is defined" }
