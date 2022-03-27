@@ -24,9 +24,45 @@
   tags:
     - aur
 
-- name: Install Moby thesaurus
+- name: Install gcide database
   aur:
-    name: dict-moby-thesaurus
+    name: dict-gcide
+    user: "{{ user.name }}"
+  tags:
+    - aur
+
+- name: Install freedict deu -> eng
+  aur:
+    name: dict-freedict-deu-eng-bin
+    user: "{{ user.name }}"
+  tags:
+    - aur
+
+- name: Install freedict fra -> eng
+  aur:
+    name: dict-freedict-fra-eng-bin
+    user: "{{ user.name }}"
+  tags:
+    - aur
+
+- name: Install freedict isl -> eng
+  aur:
+    name: dict-freedict-isl-eng-bin
+    user: "{{ user.name }}"
+  tags:
+    - aur
+
+- name: Install freedict jpn -> eng
+  aur:
+    name: dict-freedict-jpn-eng-bin
+    user: "{{ user.name }}"
+  tags:
+    - aur
+
+
+- name: Install wiktionary (en)
+  aur:
+    name: dict-wikt-en-all
     user: "{{ user.name }}"
   tags:
     - aur
