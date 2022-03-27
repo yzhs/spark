@@ -3,10 +3,10 @@ user:
     uid: 1000
     group: pigmonkey
     shell: /usr/bin/zsh
-    email:  peter@havenaut.net
-    log:
-        dir: log
-        rotate: 8
+#    email:  peter@havenaut.net
+#    log:
+#        dir: log
+#        rotate: 8
 
 hostname: nous
 
