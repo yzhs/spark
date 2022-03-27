@@ -49,7 +49,6 @@
 #    - { role: parcimonie, tags: ['parcimonie'], when: "tor is defined" }
     - { role: wormhole, tags: ['wormhole'] }
 #    - { role: bluetooth, tags: ['bluetooth'], when: "bluetooth is defined" }
-    - { role: wttr, tags: ['wttr'] }
 #    - { role: mirrorlist, tags: ['mirrorlist'], when: "mirrorlist is defined" }
     - { role: pkgfile, tags: ['pkgfile'], when: "pkgfile is defined" }
     - { role: units, tags: ['units'], when: "units is defined" }
