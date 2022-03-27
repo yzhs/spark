@@ -42,7 +42,6 @@
     - { role: office, tags: ['office'] }
     - { role: pdf, tags: ['pdf'] }
     - { role: dictd, tags: ['dictd'] }
-    - { role: hashicorp, tags: ['hashicorp'] }
     - { role: sound, tags: ['sound'] }
     - { role: calibre, tags: ['calibre'] }
 #    - { role: parcimonie, tags: ['parcimonie'], when: "tor is defined" }
