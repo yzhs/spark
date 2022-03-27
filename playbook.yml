@@ -35,7 +35,7 @@
     - { role: mpd, tags: ['mpd'] }
     - { role: mpv, tags: ['mpv'] }
     - { role: laptop, tags: ['laptop'] }
-    - { role: thinkpad, tags: ['thinkpad'], when: "'ThinkPad' in ansible_product_version" }
+#    - { role: thinkpad, tags: ['thinkpad'], when: "'ThinkPad' in ansible_product_version" }
     - { role: screensaver, tags: ['screensaver'] }
     - { role: weechat, tags: ['weechat'] }
     - { role: taskwarrior, tags: ['taskwarrior'] }
