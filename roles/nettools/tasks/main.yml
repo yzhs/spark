@@ -1,12 +1,6 @@
 ---
-- name: Install OpenVPN
-  pacman: name=openvpn state=present
-
 - name: Install MTR
   pacman: name=mtr state=present
-
-- name: Install net-tools
-  pacman: name=net-tools state=present
 
 - name: Install bind-tools
   pacman: name=bind-tools state=present
@@ -14,25 +8,11 @@
 - name: Install whois
   pacman: name=whois state=present
 
-- name: Install netcat
-  pacman: name=gnu-netcat state=present
-
-- name: Install lftp
-  pacman: name=lftp state=present
-
 - name: Install nmap
   pacman: name=nmap state=present
 
 - name: Install tcpdump
   pacman: name=tcpdump state=present
-
-- name: Install sshuttle
-  pacman: name=sshuttle state=present
-
-- name: Install pdsh
-  aur: name=pdsh user={{ user.name }}
-  tags:
-    - aur
 
 - name: Install wireshark
   pacman: name=wireshark-qt state=present
@@ -47,15 +27,6 @@
 
 - name: Install nethogs
   pacman: name=nethogs state=present
-
-- name: Install bmon
-  pacman: name=bmon state=present
-
-- name: Install speedtest-cli
-  pacman: name=speedtest-cli state=present
-
-- name: Install spiped
-  pacman: name=spiped state=present
 
 - name: Install wireguard and kernel modules
   pacman:
