@@ -95,20 +95,6 @@ filesystem_packages:
     - dosfstools
     - ntfs-3g
     - exfat-utils
-    - gparted
-
-browser_choices:
-    - firefox -P default
-    - firefox -P work
-    - firewarden chromium
-    - firewarden -c qutebrowser
-    - tor-browser-en
-    - play
-    - qcode
-    - "| xclip -selection c"
-
-passwordless_sudo:
-    - /usr/bin/openvpn*
 
 
 gitannex:
