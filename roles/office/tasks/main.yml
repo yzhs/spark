@@ -4,47 +4,6 @@
     name: libreoffice-fresh
     state: present
 
-- name: Jail LibreOffice
-  file:
-    src: /usr/bin/firejail
-    dest: /usr/local/bin/libreoffice
-    state: link
-  tags:
-    - firejail
-
-- name: Verify LibreOffice firejail local profile exists
-  file:
-    path: /etc/firejail/libreoffice.local
-    state: touch
-  tags:
-    - firejail
-
-- name: Restrict LibreOffice network access
-  lineinfile:
-    dest: /etc/firejail/libreoffice.local
-    regexp: "^net"
-    line: "net none"
-  tags:
-    - firejail
-
-- name: Restrict LibreOffice access to /etc
-  lineinfile:
-    dest: /etc/firejail/libreoffice.local
-    regexp: "^private-etc"
-    line: "private-etc firejail,libreoffice,fonts,passwd"
-  tags:
-    - firejail
-
-- name: Install enscript
-  pacman:
-    name: enscript
-    state: present
-
-- name: Install Simple Scan
-  pacman:
-    name: simple-scan
-    state: present
-
 - name: Install pandoc and dependencies
   pacman:
     name:
@@ -60,20 +19,6 @@
   pacman:
     name: texlive-latexextra
     state: present
-
-- name: Install qalculate
-  pacman:
-    name: qalculate-gtk
-    state: present
-
-- name: Install undertime and dependencies
-  aur:
-    name:
-      - python-dateparser
-      - python-undertime
-    user: "{{ user.name }}"
-  tags:
-    - aur
 
 - name: Install GNU Plot
   pacman:
