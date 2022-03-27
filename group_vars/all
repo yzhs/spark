@@ -1,7 +1,7 @@
 user:
-    name: pigmonkey
+    name: yzhs
     uid: 1000
-    group: pigmonkey
+    group: yzhs
     shell: /usr/bin/zsh
 #    email:  peter@havenaut.net
 #    log:
