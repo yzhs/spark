@@ -5,8 +5,3 @@
       - tor
       - torsocks
     state: present
-
-- include_tasks: roles/nmtrust/tasks/unit.yml
-  vars:
-      unit: tor.service
-      run_on: "{{ tor.run_on }}"
