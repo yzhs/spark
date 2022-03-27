@@ -1,7 +1,8 @@
 ## {{ ansible_managed }}
-##
-## User privilege specification
-##
+
+# Use global tickets, not one per (pseudo)tty
+Defaults !tty_tickets
+
 root ALL=(ALL) ALL
 
 %wheel ALL=(ALL) ALL
