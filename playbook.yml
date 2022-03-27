@@ -51,7 +51,6 @@
     - { role: hashicorp, tags: ['hashicorp'] }
     - { role: virtualenv, tags: ['virtualenv'] }
     - { role: sound, tags: ['sound'] }
-    - { role: pim, tags: ['pim'] }
     - { role: radio, tags: ['radio'] }
     - { role: postgresql, tags: ['postgresql'] }
     - { role: calibre, tags: ['calibre'] }
