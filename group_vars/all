@@ -70,6 +70,8 @@ filesystem_packages:
     - dosfstools
     - ntfs-3g
     - exfat-utils
+    - btrfs-progs
+    - xfsprogs
 
 bootloader: systemd-boot
 
