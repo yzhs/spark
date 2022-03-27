@@ -19,9 +19,6 @@
     - { role: pass, tags: ['pass'] }
 #    - { role: iptables, tags: ['iptables'] }
     - { role: nettools, tags: ['nettools'] }
-    - { role: nmtrust, tags: ['nmtrust'] }
-    - { role: unbound, tags: ['unbound'] }
-    - { role: openresolv, tags: ['openresolv'] }
     - { role: networkmanager, tags: ['networkmanager'] }
     - { role: ntp, tags: ['ntp'] }
     - { role: firejail, tags: ['firejail'] }
@@ -63,7 +60,6 @@
     - { role: wormhole, tags: ['wormhole'] }
 #    - { role: bluetooth, tags: ['bluetooth'], when: "bluetooth is defined" }
     - { role: wttr, tags: ['wttr'] }
-    - { role: syncthing, tags: ['syncthing'], when: "syncthing is defined" }
 #    - { role: mirrorlist, tags: ['mirrorlist'], when: "mirrorlist is defined" }
     - { role: pkgfile, tags: ['pkgfile'], when: "pkgfile is defined" }
     - { role: units, tags: ['units'], when: "units is defined" }
