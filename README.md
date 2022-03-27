@@ -165,26 +165,6 @@ By default BitlBee will be configured to proxy through Tor. To disable this,
 remove the `bitlebee.torify` variable or disable Tor entirely by removing the
 `tor` variable.
 
-## git-annex
-
-[git-annex][27] is installed for file syncing. A systemd service unit for the
-git-annex assistant is enabled and started by default. To prevent this, remove
-the `gitannex` variable from the config.
-
-Additionally, the git-annex unit is added to `/etc/nmtrust/trusted_units`,
-causing the NetworkManager trusted unit dispatcher to activate the service
-whenever a connection is established to a trusted network. The service is
-stopped whenever a connection is established to an untrusted network. Unlike
-other units using the trusted network framework, the git-annex unit is also
-activated when there are no active network connections. This allows the
-git-annex assistant to be used when on trusted networks and when offline, but
-not when on untrusted networks.
-
-If the `gitannex.stop_on_untrusted` variable is set to anything other than
-`True` or is not defined, the git-annex unit will not be added to the trusted
-unit file, resulting in the git-annex assistant not being stopped on untrusted
-networks.
-
 ## PostgreSQL
 
 [PostgreSQL][28] is installed and enabled by default. If the
