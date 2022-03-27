@@ -30,11 +30,6 @@
     name: sshfs
     state: present
 
-- name: Install autossh
-  pacman:
-    name: autossh
-    state: present
-
 - name: Copy fuse configuration file
   copy:
     src: fuse.conf
