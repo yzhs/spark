@@ -3,7 +3,9 @@
   pacman:
     name:
       - hunspell
-      - hunspell-en_US
+      - hunspell-de
+      - hunspell-en_gb
+      - hunspell-en_us
     state: present
   tags:
     - hunspell
@@ -12,6 +14,7 @@
   pacman:
     name:
       - aspell
+      - aspell-de
       - aspell-en
     state: present
   tags:
