@@ -29,7 +29,7 @@ ssh:
 
 gnupg:
     enable_agent: True
-    emulate_ssh: True
+    emulate_ssh: False
 
 mail:
     sync_tool: isync
