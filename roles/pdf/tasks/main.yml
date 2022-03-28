@@ -10,15 +10,6 @@
   tags:
     - zathura
 
-- name: Set Zathura as default PDF viewer
-  lineinfile:
-    dest: /etc/xdg/mimeapps.list
-    regexp: "^application/pdf"
-    state: present
-    line: "application/pdf=org.pwmt.zathura.desktop"
-  tags:
-    - zathura
-
 - name: Install pdfgrep
   pacman:
     name: pdfgrep
