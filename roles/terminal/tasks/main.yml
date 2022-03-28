@@ -4,3 +4,11 @@
     name:
     - di
     state: present
+
+- name: Install command line tools from AUR
+  aur:
+    name:
+    - autojump
+    user: "{{ user.name }}"
+  tags:
+    - aur
