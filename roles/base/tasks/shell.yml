@@ -13,7 +13,6 @@
     name:
       - zsh
       - zsh-completions
-      - autojump
     state: present
   tags:
     - shell
