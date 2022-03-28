@@ -51,6 +51,7 @@
     - { role: pydev, tags: ['pydev'] }
     - { role: signal, tags: ['signal'] }
     - { role: ripgrep, tags: ['ripgrep'] }
+    - { role: terminal, tags: ['terminal'] }
   vars_prompt:
     - name: user_password
       prompt: "Enter desired user password"

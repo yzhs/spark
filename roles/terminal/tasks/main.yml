@@ -1,0 +1,6 @@
+---
+- name: Install command line tools
+  pacman:
+    name:
+    - di
+    state: present
