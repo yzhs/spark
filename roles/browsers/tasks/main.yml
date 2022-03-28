@@ -17,10 +17,3 @@
     state: present
   tags:
     - chromium
-
-- name: Install Tor browser
-  pacman:
-    name: tor-browser
-    state: present
-  tags:
-    - tor-browser
