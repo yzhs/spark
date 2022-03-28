@@ -8,7 +8,7 @@ user:
 #        dir: log
 #        rotate: 8
 
-hostname: nous
+hostname: ceres
 
 dotfiles:
     url: git@github.com:yzhs/dotfiles.git
