@@ -45,14 +45,6 @@
   tags:
     - aur
 
-- name: Install freedict jpn -> eng
-  aur:
-    name: dict-freedict-jpn-eng-bin
-    user: "{{ user.name }}"
-  tags:
-    - aur
-
-
 - name: Install wiktionary (en)
   aur:
     name: dict-wikt-en-all
