@@ -1,14 +1,9 @@
 ---
-- name: Install command line tools
-  pacman:
-    name:
-    - di
-    state: present
-
 - name: Install command line tools from AUR
   aur:
     name:
     - autojump
+    - di
     user: "{{ user.name }}"
   tags:
     - aur
