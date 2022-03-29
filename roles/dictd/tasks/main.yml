@@ -45,13 +45,6 @@
   tags:
     - aur
 
-- name: Install freedict isl -> eng
-  aur:
-    name: dict-freedict-isl-eng-bin
-    user: "{{ user.name }}"
-  tags:
-    - aur
-
 - name: Install freedict jpn -> eng
   aur:
     name: dict-freedict-jpn-eng-bin
