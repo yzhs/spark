@@ -32,3 +32,9 @@
   pacman:
     name: wireguard-tools
     state: present
+
+- name: Install monitoring tools
+  pacman:
+    name:
+    - iftop
+    state: present

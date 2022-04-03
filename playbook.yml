@@ -52,6 +52,7 @@
     - { role: signal, tags: ['signal'] }
     - { role: ripgrep, tags: ['ripgrep'] }
     - { role: terminal, tags: ['terminal'] }
+    - { role: dev, tags: ['dev'] }
   vars_prompt:
     - name: user_password
       prompt: "Enter desired user password"

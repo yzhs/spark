@@ -1,0 +1,14 @@
+---
+- name: Install command line tools from repos
+  pacman:
+    name:
+    - git
+    - hub
+    state: present
+
+#- name: Install command line tools from AUR
+#  aur:
+#    name:
+#    user: "{{ user.name }}"
+#  tags:
+#    - aur

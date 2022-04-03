@@ -1,4 +1,10 @@
 ---
+- name: Install command line tools from repos
+  pacman:
+    name:
+    - exa
+    state: present
+
 - name: Install command line tools from AUR
   aur:
     name:
